@@ -291,7 +291,7 @@ Prompt:
   - Architecture: «MVC | Clean Architecture | Microservices»
   - Key domains: «Payments, Backup Management, Identity»
   - Test framework: «MSTest | xUnit | pytest | Jest»
-  - Deployment: «Service Fabric | Kubernetes | Azure Functions»
+  - Deployment: «Kubernetes | Docker | Azure Functions | Service Fabric»
 
   Paths: DOCS_ROOT={DOCS_ROOT}/, SKILLS_ROOT={SKILLS_ROOT}/
 
@@ -459,7 +459,7 @@ Prompt:
 
   ---
 
-  ## «Domain 1 Name» (e.g., DPP / Backup Vault) Controllers
+  ## «Domain 1 Name» (e.g., Auth / Payments) Controllers
 
   ### Documented Controllers
 
@@ -473,7 +473,7 @@ Prompt:
   |----------------------|-----------------|-----------------|
   | «ControllerName»     | `«path»/`       | New workflow doc / Add section to #NN |
 
-  (Repeat Documented + Undocumented tables for each domain: DPP, RSV, etc.)
+  (Repeat Documented + Undocumented tables for each domain: Auth, Orders, etc.)
 
   ---
 
@@ -944,7 +944,7 @@ To run:
   2. Copy the prompt below (between the ═══ lines).
   3. Answer the 7 setup questions:
      - Questions per domain (recommend: 5)
-     - Focus area (blank = all, or "DPP", "RSV")
+     - Focus area (blank = all, or "Auth", "Orders")
      - Difficulty (recommend: deep)
      - Max consecutive ✅ before skip (recommend: 3)
      - Auto-fix: yes (edit docs) or dry-run (report only)
@@ -971,7 +971,7 @@ human response. You run the full loop autonomously.
 BEFORE YOU START, ask me these questions ONE AT A TIME:
 
   1. How many total questions? (number, default: 100)
-  2. Focus area? (blank = all domains, or specify like "DPP", "RSV")
+  2. Focus area? (blank = all domains, or specify like "Auth", "Orders")
   3. Difficulty? (basic / intermediate / deep — default: deep)
   4. Max consecutive ✅ before skipping to next domain? (default: 3)
   5. Auto-fix gaps? (yes = edit docs, dry-run = report only — default: yes)
